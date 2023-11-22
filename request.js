@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         main:data.weather[0].main,
                         lat:data.coord.lat,
                         lon:data.coord.lon
-                        console.log('Response:',data)
                     };
             const aqiUrl = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${encodeURIComponent(weatherInfo.lat)}&lon=${encodeURIComponent(weatherInfo.lon)}&appid=${apiKey}`;
             fetch(aqiUrl)
