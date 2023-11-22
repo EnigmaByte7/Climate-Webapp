@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
             fetch(apiUrl)
                 .then(response => response.json())
                 .then(data => {
-                    if (data.rain['1h']!="undefined"){
+                    if (data.rain){
                         let rain=data.rain['1h'];
                     }
-                    else if (data.rain['1h']!="undefined"){
+                    else if (data.snow){
                         let snow=data.snow['1h'];
                     }
                     const weatherInfo = {
