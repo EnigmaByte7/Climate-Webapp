@@ -71,7 +71,6 @@ body {
     align-items:center;
     padding-bottom:20px;
     padding-top:20px;
-    border-bottom:2px solid rgba(105, 85, 85,0.5);
     justify-content:space-between;
     padding-left:70px;
 }
@@ -82,9 +81,7 @@ body {
 .flex:first-child{
     padding-top:0px;
 }
-.flex:last-child{
-    border-bottom:none;
-}
+
 #aqitext, #rain, #stext, #wtext, #hum{
     font-family:Lato;
     font-size:25px;
@@ -107,9 +104,10 @@ body {
         width:50px;
     }
     .flex{
-        padding-left:0px;
+        padding-left:5px;
     }
-    .other{
-        margin-left:-10%;
+    .info{
+        margin-left:20px;
     }
+
 }
