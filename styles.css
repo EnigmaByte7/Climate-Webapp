@@ -37,8 +37,8 @@ input[type="text"]{
     outline:none;
     max-width:300px;
     display:block;
-    margin-left:40vw;
-    margin-top:15%;
+    margin:auto;
+    margin-top:30vh;
     font-family:Roboto;
     padding-left:20px;
     box-shadow:0px 0px 30px Black;
