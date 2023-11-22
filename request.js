@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 .then(response => response.json())
                 .then(data => {
                     if (data.rain){
-                        let rain=data.rain['1h'];
+                        rain=data.rain['1h'];
                     }
                     else if (data.snow){
-                        let snow=data.snow['1h'];
+                        snow=data.snow['1h'];
                     }
                     const weatherInfo = {
                         city: data.name,
