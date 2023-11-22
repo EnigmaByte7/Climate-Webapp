@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
         color2='MintCream';
     }
 
-    if (rain["1h"]=="undefined")
+    if (rain=="undefined")
     {
         rain=0;
     }
