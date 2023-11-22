@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         description: data.weather[0].description,
                         wind:data.wind.speed,
                         rain:data.rain,
-                        snow:data.snow,
+                        snow:data.snow.1h,
                         icon:data.weather[0].icon,
                         main:data.weather[0].main,
                         lat:data.coord.lat,
