@@ -81,8 +81,8 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('aqitext').style.color=color[aqi];
     document.getElementById('wtext').innerText=wind+" Km/h";
     document.getElementById('hum').innerText=humidity+" %";
-    document.getElementById('rain').innerText=rain;
-    document.getElementById('stext').innerText=snow;
+    document.getElementById('rain').innerText=rain+" mm";
+    document.getElementById('stext').innerText=snow+" mm";
     document.getElementById('icon').src=`https://openweathermap.org/img/wn/${icon}@2x.png`;
     document.getElementById('status').src=`${main}.png`;
     document.body.style.backgroundImage = `linear-gradient(to bottom, ${color1}, ${color2})`;
