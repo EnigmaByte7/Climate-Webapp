@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         lon:data.coord.lon
                         console.log('Response:',data)
                     };
-            console.log('Weather Info:', weatherInfo);
             const aqiUrl = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${encodeURIComponent(weatherInfo.lat)}&lon=${encodeURIComponent(weatherInfo.lon)}&appid=${apiKey}`;
             fetch(aqiUrl)
                     .then(response => response.json())
