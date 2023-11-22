@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
             const city = document.getElementById('city').value;
             const apiKey = 'd2f83ba938e9f6cb787ac12e31709d38';
-            const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
             fetch(apiUrl)
                 .then(response => response.json())
                 .then(data => {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         lat:data.coord.lat,
                         lon:data.coord.lon
                     };
-            const aqiUrl = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${encodeURIComponent(weatherInfo.lat)}&lon=${encodeURIComponent(weatherInfo.lon)}&appid=${apiKey}`;
+            const aqiUrl = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${encodeURIComponent(weatherInfo.lat)}&lon=${encodeURIComponent(weatherInfo.lon)}&appid=${apiKey}`;
             fetch(aqiUrl)
                     .then(response => response.json())
                     .then(data =>{
