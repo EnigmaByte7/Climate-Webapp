@@ -98,3 +98,18 @@ body {
 #status{
     width:100%;
 }
+@media screen and (max-width:500px){
+    .other .flex p, #hum, #wtext,#rain,#aqitext,#stext {
+        font-size:20px;
+    }
+    .other img{
+        height:50px;
+        width:50px;
+    }
+    .flex{
+        padding-left:0px;
+    }
+    .other{
+        margin-left:-10%;
+    }
+}
