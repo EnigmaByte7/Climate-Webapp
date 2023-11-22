@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         const aqidata = {
                             aqi:data.list[0].main.aqi
                         };
-                    window.location.href = `weather.html?city=${encodeURIComponent(weatherInfo.city)}&temperature=${encodeURIComponent(weatherInfo.temperature)}&description=${encodeURIComponent(weatherInfo.description)}&aqi=${encodeURIComponent(aqidata.aqi)}&speed=${encodeURIComponent(weatherInfo.wind)}&rain=${encodeURIComponent(weatherInfo.rain)}&snow=${encodeURIComponent(weatherInfo.snow)}&ikey=${encodeURIComponent(weatherInfo.icon)}&humidity=${encodeURIComponent(weatherInfo.humidity)}&main=${encodeURIComponent(weatherInfo.main)}`;
+                    window.location.href = `/weather.html?city=${encodeURIComponent(weatherInfo.city)}&temperature=${encodeURIComponent(weatherInfo.temperature)}&description=${encodeURIComponent(weatherInfo.description)}&aqi=${encodeURIComponent(aqidata.aqi)}&speed=${encodeURIComponent(weatherInfo.wind)}&rain=${encodeURIComponent(weatherInfo.rain)}&snow=${encodeURIComponent(weatherInfo.snow)}&ikey=${encodeURIComponent(weatherInfo.icon)}&humidity=${encodeURIComponent(weatherInfo.humidity)}&main=${encodeURIComponent(weatherInfo.main)}`;
                 })
                 .catch(error => {
                     console.error('Error fetching weather data:', error);
