@@ -84,6 +84,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('rain').innerText=rain;
     document.getElementById('stext').innerText=snow;
     document.getElementById('icon').src=`https://openweathermap.org/img/wn/${icon}@2x.png`;
-    document.getElementById('status').src=`/Climate/static/${main}.png`;
+    document.getElementById('status').src=`${main}.png`;
     document.body.style.backgroundImage = `linear-gradient(to bottom, ${color1}, ${color2})`;
 });
