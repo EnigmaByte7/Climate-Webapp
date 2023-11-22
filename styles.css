@@ -66,7 +66,7 @@ input:focus{
     90% { background-image:url(10.jpeg); }
     100% { background-image:url(11.webp); }
 }
-@media screen and (min-width:500px)
+@media screen and (max-width:500px)
 {
     form [type="text"]{
         margin-top:20vh;
